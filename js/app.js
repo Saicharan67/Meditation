@@ -27,9 +27,11 @@ function loadList(array){
 }
 
 clear.addEventListener("click", function(){
+  const mo = confirm("Do you want to delete all the data?")
+  if (mo){
      localStorage.clear();
      location.reload();
-
+     }
 });
 
 const options ={
