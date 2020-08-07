@@ -128,12 +128,12 @@ video {
   z-index: -10;
   
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
 .app{
   height: 600px;
   width: 300px;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .sound-picker button {
@@ -168,12 +168,12 @@ video {
 }
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 
 .app{
   height: 500px;
   width: 300px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .sound-picker button {
