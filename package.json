@@ -1,0 +1,25 @@
+{
+  "name": "github-meditation",
+  "version": "1.0.0",
+  "description": "meditation",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saicharan67/Meditation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saicharan67/Meditation/issues"
+  },
+  "homepage": "https://github.com/Saicharan67/Meditation#readme",
+  "devDependencies": {
+    "lite": "^4.0.5",
+    "server": "^1.0.29"
+  }
+}
