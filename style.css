@@ -128,12 +128,16 @@ video {
   z-index: -10;
   
 }
-@media only screen and (max-width: 400px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
 
 .app{
   height: 600px;
   width: 300px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .sound-picker button {
@@ -168,12 +172,15 @@ video {
 }
 
 }
-@media only screen and (max-width: 480px) {
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
 
 .app{
-  height: 500px;
+  height: 700px;
   width: 300px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .sound-picker button {
@@ -205,6 +212,6 @@ video {
   color: black;
   position: absolute;
   font-size: 40px;
-  top: 3.5em;
+  top: 4em;
 }
 }

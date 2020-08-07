@@ -9,7 +9,7 @@ body{
 }
 
 /* ------------ container ------------ */
-.container{
+.app{
     padding:10px;
     padding-top: 50px;
     width:380px;
