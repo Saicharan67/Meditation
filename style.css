@@ -1,45 +1,63 @@
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+   padding: 0;
+    margin: 0;
+    
+   
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.container {
-  height: 100vh;
+.app {
+  height: 700px;
+  width: 600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  
+  flex-direction: column;
+  padding-top: 10px;
+  width:380px;
+  margin:0 auto;
+  margin-top: 30px;
+
 }
+
 .time-select,
 .sound-picker {
-  height: 80%;
+  height: 50%;
+  width: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
+ 
+
+  
 }
 .time-select button,
 .sound-picker button {
-  color: white;
-  width: 40%;
-  height: 10%;
+  color: #000;
+  width: 30%;
+  height: 30%;
   background: none;
-  font-size: 20px;
+  font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  border: 2px solid white;
+  border: 0.5px solid white;
   transition: all 0.5s ease;
+  text-decoration: none;
+
 }
+
 .sound-picker button {
   border: none;
   height: 120px;
   width: 120px;
-  padding: 30px;
+  padding: 25px;
   border-radius: 50%;
+
 }
 .sound-picker button:nth-child(1) {
   background: #4972a1;
@@ -48,7 +66,7 @@
   background: #a14f49;
 }
 .sound-picker button img {
-  height: 50%;
+  height: 80%;
 }
 
 .time-select button:hover {
@@ -58,18 +76,35 @@
 
 .player-container {
   position: relative;
-  height: 60%;
+  height: 50%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   flex: 1;
 }
+.play{
+  
+  position: absolute;
+  top: 85px;
+  left: 75px;
+  height: 30px;
+  width: 30px;
+ 
+
+}
+.replay{
+
+  position: absolute;
+  top: 155px;
+  left: 80px;
+}
 
 .player-container svg {
   position: absolute;
-  height: 55%;
-  top: 38%;
+  height: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
@@ -78,53 +113,98 @@
   transition: all 0.2s ease-in-out;
 }
 .time-display {
-  color: white;
+  color: black;
   position: absolute;
-  font-size: 50px;
-  bottom: 10%;
+  font-size: 40px;
+  top: 4.5em;
 }
 
 video {
-  max-width: 100%;
-  height: auto;
   position: fixed;
-  top: 0%;
+  top: 1.3rem;
   left: 0%;
+  height: 35%;
   width: 100%;
   z-index: -10;
-  background-size: cover;
+  
 }
-[class*="col-"] {
-  width: 100%;
+@media only screen and (max-width: 600px) {
+
+.app{
+  height: 600px;
+  width: 300px;
+  margin-left: 50px;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+.sound-picker button {
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+.play{
+  
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  height: 30px;
+  width: 30px;
+ 
+
+}
+.replay{
+
+  position: absolute;
+  top: 130px;
+  left: 70px;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 4.0em;
+}
+
+}
+@media only screen and (max-width: 400px) {
+
+.app{
+  height: 500px;
+  width: 300px;
+  margin-left: 5px;
+}
+
+.sound-picker button {
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+
+}
+
+.play{
+  
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  height: 30px;
+  width: 30px;
+ 
+
+}
+.replay{
+
+  position: absolute;
+  top: 110px;
+  left: 70px;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.5em;
+}
 }
