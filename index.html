@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
     <title>Audio App</title>
@@ -33,48 +35,59 @@
     </nav>
    
     <div class="app">
-      <div class="vid-container">
-        <video loop >
-          <source src="./video/rain.mp4"  type="video/mp4">
-        </video>
-        </div>
-        <div class="time-select">
-          <button data-time="60">2 Minutes</button>
-          <button data-time="300" class="medium-mins">5 Minutes</button>
-          <button data-time="600" class="long-mins">10 Minutes</button>
-          
-        </div>
+      <div class="header">
+           <div class="vid-container video">
+                <video loop >
+                   <source src="./video/rain.mp4"  type="video/mp4">
+                </video>
+           </div>
+           <div class="time-select">
+               &nbsp;
+              <button data-time="60">2 Minutes</button>
+              <button data-time="300" class="medium-mins">5 Minutes</button>
+              <button data-time="600" class="long-mins">10 Minutes</button>      
+               &nbsp;     
+           </div>
+      </div>
+
+
+
+      <div class="content">
+         &nbsp;
+                 &nbsp;
         <input type="number" step="any" placeholder="Enter Minutes" id="minutes">
         <div class="player-container">
             <audio class="song">
                 <source src="./sounds/rain.mp3" />
               </audio>
-              <img src="./svg/play.svg" class="play"></img>
+             <img src="./svg/play2.png" class="play"></img>
               <svg class="track-outline" width="350" height="350" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="280" cy="230" r="200" stroke="black" stroke-width="20"/>
+                <circle cx="280" cy="230" r="200" stroke="#0847e1" stroke-width="20"/>
                 </svg>
               <svg class="moving-outline" width="350" height="350" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="280" cy="230" r="200" stroke="white" stroke-width="20"/>
                 </svg>
-              <img src="./svg/replay.svg" class="replay"></img>
+              <img src="./svg/replay2.png" class="replay"></img>
             
                 <h3 class="time-display">0:00</h3>      
-      </div>
-      <div class="sound-picker">
-        <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" ><img src="./svg/rain.svg" alt=""></button>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4"><img src="./svg/beach.svg" alt=""></button>
+        </div>
+        <div class="sound-picker">
+             <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" ><i class="fa fa-cloud fa-3x"></i></button>
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                  &nbsp;
+                   &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                  &nbsp;
+                 
+             <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4"><i class="fa fa-pagelines fa-3x"></i></button>
+        </div>
       </div>
     </div>
 

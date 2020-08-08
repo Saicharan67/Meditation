@@ -11,17 +11,18 @@ body{
 /* ------------ container ------------ */
 .app{
    
-    padding-top: 60px;
-    width:380px;
-    margin:0 auto;
-    
+   
+   height: 600px;
+  width: 400px;
+   padding-top: 20px;
+  margin:0 auto;
 
 }
 
 /* ------------ header ------------ */
 .header{
-    width: 380px;
-    height:220px;
+    width: 400px;
+    height:250px;
     background-image: url('../img/bg2.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
@@ -55,9 +56,9 @@ body{
 
 /* ------------ content ------------ */
 .content{
-    width:380px;
-    height: 340px;
-    max-height:350px;
+    width:400px;
+    height: 380px;
+    /* max-height:350px; */
     background-color: #FFF;
     overflow: auto;
 }
@@ -69,7 +70,7 @@ body{
     margin:0;
 }
 .item{
-    width:380px;
+    width:400px;
     height: 45px;
     min-height: 45px;
     position: relative;
@@ -124,7 +125,7 @@ body{
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
-    width: 380px;
+    width: 400px;
     height:60px;
     background-color: #FFF;
     padding: 10px;
@@ -185,7 +186,9 @@ body{
    padding-top: 20px;
     width:350px;
     height: 650px;
-   margin:0 auto;
+    margin-left: auto;
+  margin-right: auto;
+  display: table;
     
 }
 
@@ -201,8 +204,8 @@ body{
 
 .content{
     width:350px;
-    height: 330px;
-    max-height:350px;
+    height: 400px;
+   /*  max-height:350px; */
     background-color: #FFF;
     overflow: auto;
 }
@@ -253,7 +256,9 @@ body{
    padding-top: 30px;
     width:380px;
     height: 660px;
-    margin-left: 4%;
+    margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
 .header{

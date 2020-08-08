@@ -70,11 +70,11 @@ const checkPlaying = song => {
   if (song.paused) {
     song.play();
     video.play();
-    play.src = "./svg/pause.svg";
+    play.src = "./svg/pause2.png";
   } else {
     song.pause();
     video.pause();
-    play.src = "./svg/play.svg";
+    play.src = "./svg/play2.png";
   }
 };
 
