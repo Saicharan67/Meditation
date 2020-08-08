@@ -23,7 +23,7 @@ body{
 .header{
     width: 400px;
     height:250px;
-    background-image: url('../img/bg2.jpg');
+    background-image: url('../img/bg8.jpeg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -48,8 +48,8 @@ body{
 #date{
     position: absolute;
     bottom: 10px;
-    left: 10px;
-    color: #FFF;
+    left: 30px;
+    color: #ffffff;
     font-size: 25px;
     font-family: 'Titillium Web', sans-serif;
 }
