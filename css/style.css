@@ -153,22 +153,22 @@ body{
     padding-left:10px;
 }
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
+    color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
+    color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
+    color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
 .add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
+    color: #000;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
@@ -206,6 +206,16 @@ body{
     background-color: #FFF;
     overflow: auto;
 }
+.item{
+    width:350px;
+    height: 40px;
+    min-height: 40px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .add-to-do{
     position: relative;
     width: 350px;
@@ -214,6 +224,16 @@ body{
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-radius: 0 0 15px 15px ;
+}
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 290px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
 }
 }
 
@@ -233,11 +253,11 @@ body{
    padding-top: 30px;
     width:380px;
     height: 660px;
-    margin-left: 7.5%;
+    margin-left: 4%;
 }
 
 .header{
-    width: 350px;
+    width: 380px;
     height:220px;
     background-image: url('../img/bg2.jpg');
     background-size: 100% 200%;
@@ -247,20 +267,40 @@ body{
 }
 
 .content{
-    width:350px;
+    width:380px;
     height: 350px;
     max-height:350px;
     background-color: #FFF;
     overflow: auto;
 }
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .add-to-do{
     position: relative;
-    width: 350px;
+    width: 380px;
     height:65px;
     background-color: #FFF;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-radius: 0 0 15px 15px ;
+}
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
 }
 }
 
