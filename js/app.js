@@ -2,7 +2,7 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
-
+const add = document.getElementById("add")
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH ="lineThrough";
@@ -88,6 +88,31 @@ document.addEventListener("keydown", function(event){
 
 
 });
+
+
+add.addEventListener("click",function(){
+  const vro = input.value;
+  if(vro){
+     
+          addToDo(vro,id,false,false);
+          LIST.push({
+               name:vro,
+               id:id,
+               done:false,
+               trash:false
+
+
+          });
+          localStorage.setItem("TODO" , JSON.stringify(LIST));
+
+          id++;
+
+  }
+  input.value = "";
+
+
+});
+
 
 function completeToDo(element){
    element.classList.toggle(CHECK) ;

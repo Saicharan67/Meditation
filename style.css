@@ -3,7 +3,7 @@
 body {
    padding: 0;
     margin: 0;
-    
+  overflow: hidden;
    
     font-family: 'Titillium Web', sans-serif;
 }
@@ -178,7 +178,7 @@ video {
   and (-webkit-min-device-pixel-ratio: 3) { 
 
 .app{
-  height: 700px;
+  height: 650px;
   width: 300px;
   margin-left: 50px;
 }
