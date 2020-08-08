@@ -133,7 +133,7 @@ body {
   
   position: absolute;
   top: 33%;
-  left: 43%;
+  left: 41%;
   height: 30px;
   width: 30px;
  
@@ -164,7 +164,7 @@ body {
   color: black;
   position: absolute;
   font-size: 40px;
-  top: 4em;
+  top: 3.5em;
 }
 
 video {
@@ -217,6 +217,12 @@ video {
   margin :  0 auto;
   margin-bottom: 1rem;
 }
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.2em;
+}
 
 .fa-3x {
   font-size: 2em;
@@ -254,7 +260,15 @@ video {
  
 
 }
-
+.fa-3x {
+  font-size: 2em;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.2em;
+}
 .content{
   background-color: #ffffff;
   height: 380px;
