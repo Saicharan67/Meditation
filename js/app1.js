@@ -1,4 +1,5 @@
 
+
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
@@ -97,7 +98,7 @@ tempElement.addEventListener("click", function(){
 //Alarm CLock.....
 
 let currentTime = '';
-const sound = new Audio('../sounds/sound.mp3');
+const sound =  document.querySelector(".song");
 sound.loop = true;
 
 const formatDay = (index) => {
@@ -148,9 +149,9 @@ const getAlarmTime = () => {
 };
 
 const startAlarm = () => {
-
   console.log(currentTime);
-  alert(`Your alarm has been set at ${getAlarmTime()}`);
+  console.log(getAlarmTime());
+  alert(`Your alarm has been set at ${getAlarmTime()}`)
   document.getElementById('alarm-hour').disabled = true;
   document.getElementById('alarm-minute').disabled = true;
   document.getElementById('alarm-second').disabled = true;
@@ -161,7 +162,6 @@ const startAlarm = () => {
       console.log("alarm time");
     }
   }, 1000);
-
 };
 
 const cancelAlarm = () => {
