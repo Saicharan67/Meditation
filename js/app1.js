@@ -151,6 +151,10 @@ const getAlarmTime = () => {
 const startAlarm = () => {
   console.log(currentTime);
   console.log(getAlarmTime());
+  if (parseInt(getAlarmTime().substring(0,2)-currentTime.substring(0,2) )< 0 || parseInt(getAlarmTime().substring(3,5)-currentTime.substring(3,5) )< 0 || parseInt(getAlarmTime().substring(6,8)-currentTime.substring(6,8) )< 0){
+              alert("Enter correct time");
+              return;
+  }
   alert(`Your alarm has been set at ${getAlarmTime()}`)
   document.getElementById('alarm-hour').disabled = true;
   document.getElementById('alarm-minute').disabled = true;
