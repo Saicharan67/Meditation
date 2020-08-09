@@ -192,7 +192,13 @@ body{
 
 }
 
-
+.app-title p{
+    text-align: center;
+    padding-top:  60px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    color: #222222;
+}
 
 
 
@@ -243,7 +249,13 @@ body{
 }
 
 
-
+.app-title p{
+    text-align: center;
+    padding-top:  55px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    color: #222222;
+}
 
 
 

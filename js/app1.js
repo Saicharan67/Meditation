@@ -148,8 +148,9 @@ const getAlarmTime = () => {
 };
 
 const startAlarm = () => {
+
   console.log(currentTime);
-  console.log(getAlarmTime());
+  alert(`Your alarm has been set at ${getAlarmTime()}`);
   document.getElementById('alarm-hour').disabled = true;
   document.getElementById('alarm-minute').disabled = true;
   document.getElementById('alarm-second').disabled = true;
@@ -160,6 +161,7 @@ const startAlarm = () => {
       console.log("alarm time");
     }
   }, 1000);
+
 };
 
 const cancelAlarm = () => {
