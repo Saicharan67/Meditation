@@ -1,0 +1,243 @@
+*{
+     font-family: 'Titillium Web', sans-serif;
+
+}
+
+body{
+    background-image: url('../img/back2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+.app {
+  height: 600px;
+  width: 400px;
+   padding-top: 20px;
+  margin:0 auto;
+  
+
+}
+.header{
+    background-image: url('../img/bg12.jfif');
+    background-size: 100% 200%;
+    width: 400px;    
+    
+    height: 280px;
+     border-radius: 15px 15px 0 0;
+     position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding-bottom : 50px;
+}
+.content{
+    border-top: 2px solid black;
+     margin :  0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+     border-radius: 0 0 15px 15px ;
+    border:   1.5px solid rgba(0,0,0.1,0.1);
+}
+.app-title{
+   
+    height: 50px;
+   
+}
+
+.app-title p{
+    text-align: center;
+    padding-top:  40px;
+    margin: 0 auto;
+    font-size: 1.7em;
+    color: #222222;
+}
+
+.notification{
+    background-color: #ffffff;
+    display: none;
+}
+
+.notification p{
+    color: #000;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    padding-top: 20px;
+    width: 300px;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.weather-icon{
+    width: 300px;
+    height: 100px;
+    padding-top: 15px;
+}
+
+.weather-icon img{
+
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    color: #222222;
+    font-size: 3.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+   
+}
+
+.temperature-value span{
+    color:  #222222;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    padding-top: 20px;
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color:  #222222;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+   margin-top: 10px;
+}
+
+.location p{
+    
+    
+   
+    color: #222222;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+@media only screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+
+.app{
+  height: 600px;
+  width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+
+.header{
+    
+    width: 330px;    
+    
+    height: 280px;
+     border-radius: 15px 15px 0 0;
+     position: relative;
+    margin: 0 auto;
+   
+    
+    padding-bottom : 50px;
+}
+.content{
+     margin :  0 auto;
+    background-color: #fff;
+    
+    height: 400px;
+    width: 330px;
+    margin-bottom: 1rem;
+ 
+
+
+
+}
+
+
+
+
+
+
+ }
+ @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+
+.app{
+  height: 600px;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+
+.header{
+    
+    width: 380px;    
+    
+    height: 280px;
+     border-radius: 15px 15px 0 0;
+     position: relative;
+    margin: 0 auto;
+   
+    
+    padding-bottom : 50px;
+}
+.content{
+     margin :  0 auto;
+    background-color: #fff;
+    
+    height: 400px;
+    width: 380px;
+    margin-bottom: 1rem;
+ 
+
+
+
+}
+
+
+
+
+
+
+ }

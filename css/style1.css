@@ -1,0 +1,279 @@
+
+
+body {
+   padding: 0;
+    margin: 0;
+   overflow-y: visible;
+  
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.app {
+  height: 600px;
+  width: 400px;
+   padding-top: 20px;
+  margin:0 auto;
+  
+
+}
+.header{
+ background-image: url('../img/bg1.jpg');
+ background-size: 100% 200%;
+ background-repeat: no-repeat;
+ border-radius: 15px 15px 0 0;
+ position: relative;
+ height: 300px;
+ width: 400px;
+ margin :  0 auto;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+
+}
+.content{
+  background-color: #ffffff;
+  height: 400px;
+  width: 400px;
+  margin :  0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: space-evenly;
+ border-radius: 0 0 15px 15px ;
+ border:   1.5px solid rgba(0,0,0.1,0.1);
+}
+.time-select,
+.sound-picker {
+  height: 50%;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+ 
+
+  
+}
+#minutes{
+  height: 10%;
+  margin:5px 0;
+  padding:15px 10px;
+  width:60%;
+  outline:none;
+  border:1px solid #bbb;
+  border-radius:10px;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+
+}
+.time-select button,
+.sound-picker button {
+  color: #fff;
+  width: 30%;
+  height: 30%;
+  background: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0.5px solid white;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  outline: none;
+
+}
+
+.sound-picker button {
+  border: none;
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  border-radius: 50%;
+
+}
+.sound-picker button:nth-child(1) {
+  background: #47b2f0;
+}
+.sound-picker button:nth-child(2) {
+  background: #77ed1e;
+}
+.sound-picker i {
+  height: 30%;
+}
+
+.time-select button:hover {
+  background: white;
+  color: black;
+
+}
+.sound-picker button :hover {
+  transform: scale(1.1, 1.1);
+  
+}
+
+.player-container {
+  position: relative;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.play{
+  
+  position: absolute;
+  top: 33%;
+  left: 42.5%;
+  height: 30px;
+  width: 30px;
+ 
+
+}
+.replay{
+
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 73%;
+  left: 45%;
+}
+
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.5em;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -10;
+
+  
+}
+@media only screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+.app{
+  height: 600px;
+  width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.sound-picker button {
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+
+}
+
+
+.header{
+ 
+ 
+ position: relative;
+ height: 270px;
+ width: 330px;
+ margin :  0 auto;
+ 
+
+}
+.content{
+  background-color: #ffffff;
+  height: 370px;
+  width: 330px;
+  margin :  0 auto;
+  margin-bottom: 1rem;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.2em;
+}
+
+.fa-3x {
+  font-size: 2em;
+}
+
+
+}
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+.app{
+  height: 600px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.sound-picker button {
+  border: none;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.header{
+ 
+ 
+ position: relative;
+ height: 280px;
+ width: 350px;
+ 
+ 
+
+}
+.fa-3x {
+  font-size: 2em;
+}
+.time-display {
+  color: black;
+  position: absolute;
+  font-size: 40px;
+  top: 3.2em;
+}
+.content{
+  background-color: #ffffff;
+  height: 380px;
+  width: 350px;
+  
+  margin-bottom: 1rem;
+}
+}
