@@ -8,6 +8,7 @@ body{
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
+    background-attachment: fixed;
 }
 .app {
   height: 600px;
@@ -153,7 +154,10 @@ body{
   and (-webkit-min-device-pixel-ratio: 2) { 
 
 
-
+body{
+   
+    background-size: cover;
+}
 .app{
   height: 600px;
   width: 330px;
@@ -199,7 +203,10 @@ body{
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
-
+body{
+   
+    background-size: cover;
+}
 
 .app{
   height: 600px;
