@@ -161,22 +161,16 @@ const startAlarm = () => {
       return;
 
   }
-  else{
+  if (x1==0 && x2<0 ){
 
-    if (x2<0){
       alert("Enter Correct Time");
       return;
-
-    }
-    else{
-
-      if(x3<0){
-         alert("Enter Correct Time");
-          return;
-      }
-    }
   }
-  
+  if (x2==0 && x1==0 && x3<0){
+
+    alert("Enter Correct Time");
+      return;
+  }
   alert(`Your alarm has been set at ${getAlarmTime()}`)
   document.getElementById('alarm-hour').disabled = true;
   document.getElementById('alarm-minute').disabled = true;
