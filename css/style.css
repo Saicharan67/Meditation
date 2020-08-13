@@ -25,7 +25,7 @@ body{
 /* ------------ header ------------ */
 .header{
     width: 400px;
-    height:250px;
+    height:300px;
     background-image: url('../img/bg8.jpeg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body{
 /* ------------ content ------------ */
 .content{
     width:400px;
-    height: 380px;
+    height: 330px;
     /* max-height:350px; */
     background-color: #FFF;
     overflow: auto;
@@ -198,7 +198,7 @@ body{
 
 .header{
     width: 350px;
-    height:220px;
+    height:270px;
     background-image: url('../img/bg8.jpeg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ body{
 
 .content{
     width:350px;
-    height: 400px;
+    height: 320px;
    /*  max-height:350px; */
     background-color: #FFF;
     overflow: auto;
@@ -268,7 +268,7 @@ body{
 
 .header{
     width: 380px;
-    height:220px;
+    height:270px;
     background-image: url('../img/bg2.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
@@ -278,7 +278,7 @@ body{
 
 .content{
     width:380px;
-    height: 350px;
+    height: 330px;
     max-height:350px;
     background-color: #FFF;
     overflow: auto;
@@ -296,7 +296,7 @@ body{
 .add-to-do{
     position: relative;
     width: 380px;
-    height:65px;
+    height:60px;
     background-color: #FFF;
     padding: 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
