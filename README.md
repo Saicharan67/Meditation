@@ -8,7 +8,7 @@ This website has...
 
 Fully usable 3 apps for increasing your productivity..👨‍🎓👨‍🎓👨‍🎓
 
-U can find ScreenShots of the project Below...👇👇👇
+U can find ScreenShots of the project Below.....👇👇👇
 
 ### Meditation App
 
